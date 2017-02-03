@@ -23,3 +23,7 @@ yarn build
 yarn start
 ```
 
+# Run in 'live' compile/test mode
+```
+yarn live
+```

@@ -8,11 +8,15 @@
   "license": "Unlicense",
   "devDependencies": {
     "@types/node": "^7.0.0",
+    "nodemon": "^1.11.0",
+    "ts-node": "^2.0.0",
     "typescript": "^2.1.5"
   },
   "scripts": {
     "build": "./node_modules/.bin/tsc",
-    "start": "node ./app"
+    "start": "node ./app",
+    "live": "yarn run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./app.ts"
   },
   "includes": [
     "app.ts"
