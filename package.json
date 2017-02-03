@@ -1,0 +1,20 @@
+{
+  "name": "test-simple-node-typescript",
+  "version": "0.1.0",
+  "description": "Simple test of NodeJS and TypeScript",
+  "main": "index.js",
+  "repository": "https://github.com/winksaville/test-simple-node-typescript",
+  "author": "Wink Saville",
+  "license": "Unlicense",
+  "devDependencies": {
+    "@types/node": "^7.0.0",
+    "typescript": "^2.1.5"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "start": "node ./app"
+  },
+  "includes": [
+    "app.ts"
+  ]
+}
